@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>趣游趵突_小程序二维码</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#div1,#div2{
+				font-family: ;
+				font-size: large;
+				margin: 50px auto;
+				text-align: center;
+
+			}
+			
+			#div2 img {
+				width: 200px;
+				height: 200px;
+			}
+			
+			@keyframes animation1 {
+				0% {
+					left: -10%;
+					bottom: 10%;
+				}			
+				100% {
+					left: 110%;
+					bottom: 10%;
+				}						
+			}
+			
+			.animation-div {
+				width: 150px;
+				height: 150px;
+				position: fixed;
+				Left: 0;
+				Bottom: 0;
+				z-index: 2;
+
+				animation: animation1 6s infinite linear;
+				-webkit-animation: animation1 6s infinite linear;
+				/*Safari and Chrome*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<big>
+				<h1>第十八届山东省大学生软件设计大赛</h1>
+				<br />
+				<h3>HTML5创意应用微信小程序组：对对队</h3>
+			</big>
+		</div>
+			
+		<div id="div2">
+			<img src="images/二维码.jpg" />
+			<p>(小程序二维码)</p>
+		</div>
+		
+
+			<img class="animation-div" src="images/MoveWhite3.gif" />
+
+	</body>
+</html>
